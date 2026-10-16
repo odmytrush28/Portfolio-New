@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <circle cx="32" cy="32" r="31" fill="#7a2e43"/>
+  <circle cx="32" cy="32" r="27.5" fill="none" stroke="#f2ce7e" stroke-opacity=".65" stroke-width="1.2"/>
+  <text x="31" y="41" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="25" fill="#ffffff" letter-spacing="-1">O<tspan fill="#f2ce7e" font-style="italic">D</tspan></text>
+</svg>

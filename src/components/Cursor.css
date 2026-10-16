@@ -1,0 +1,54 @@
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  pointer-events: none;
+  will-change: transform;
+}
+.cursor__ring {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  min-width: 18px;
+  height: 18px;
+  padding: 0;
+  translate: -50% -50%;
+  border-radius: var(--r-pill);
+  background: var(--maroon-600);
+  color: #fff;
+  box-shadow:
+    0 0 0 1px rgba(242, 206, 126, 0.65),
+    0 10px 24px -8px rgba(99, 33, 53, 0.6);
+  opacity: 0;
+  scale: 0.4;
+  transition:
+    opacity 220ms var(--ease-out),
+    scale 320ms var(--ease-out),
+    padding 320ms var(--ease-out),
+    height 320ms var(--ease-out);
+}
+.cursor.is-on .cursor__ring {
+  opacity: 1;
+  scale: 1;
+  height: 34px;
+  padding: 0 14px;
+}
+.cursor__label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.cursor-hidden [data-cursor],
+.cursor-hidden [data-cursor] * {
+  cursor: none;
+}
+.cursor-hidden [data-cursor] a,
+.cursor-hidden [data-cursor] button {
+  cursor: pointer;
+}

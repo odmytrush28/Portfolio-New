@@ -1,0 +1,105 @@
+/* ─────────────────────────────────────────────────────────────
+   DESIGN TOKENS
+   Palette: warm ivory + ink, dusty-rose → maroon edges (hero guide),
+   gold reserved for "transformation" moments (from the glow scene).
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Neutrals */
+  --ivory: #fbf7f3;
+  --paper: #ffffff;
+  --sand: #f3ebe4;
+  --ink: #1c1416;
+  --ink-2: #463b3e;
+  --muted: #6f6265;
+  --line: rgba(28, 20, 22, 0.1);
+  --line-strong: rgba(28, 20, 22, 0.18);
+
+  /* Rose / maroon */
+  --rose-50: #fbf0ee;
+  --rose-100: #f4dedb;
+  --rose-200: #ead0cf;
+  --rose-300: #d9a5a8;
+  --maroon-400: #a8536a;
+  --maroon-500: #8e3a50;
+  --maroon-600: #7a2e43;
+  --maroon-700: #632135;
+  --maroon-900: #2b0f18;
+
+  /* Gold */
+  --gold-200: #f8e2ae;
+  --gold-300: #f2ce7e;
+  --gold-400: #e6b55a;
+  --gold-500: #d29a35;
+  --gold-700: #8a5f10;
+
+  /* Dark surfaces */
+  --night: #160c10;
+  --night-2: #21131a;
+  --night-line: rgba(248, 226, 174, 0.12);
+  --on-night: #f6ece6;
+  --on-night-2: #c9b7b3;
+
+  /* Semantic */
+  --accent: var(--maroon-600);
+  --accent-strong: var(--maroon-700);
+  --focus: #b4475f;
+
+  /* Typography */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'Manrope Variable', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', Consolas, monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1.0625rem;
+  --fs-md: 1.1875rem;
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.5vw, 1.5rem);
+  --fs-xl: clamp(1.6rem, 1.25rem + 1.2vw, 2.25rem);
+  --fs-2xl: clamp(2.1rem, 1.45rem + 2.6vw, 3.6rem);
+  --fs-hero: clamp(2.45rem, 1.35rem + 3.5vw, 4.75rem);
+
+  /* Spacing (4px base) */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+  --s-10: 128px;
+  --section-y: clamp(80px, 9vw, 140px);
+  --gutter: clamp(20px, 4vw, 48px);
+  --container: 1240px;
+
+  /* Shape */
+  --r-xs: 6px;
+  --r-sm: 10px;
+  --r-md: 18px;
+  --r-lg: 28px;
+  --r-pill: 999px;
+
+  /* Elevation */
+  --shadow-1: 0 1px 2px rgba(43, 15, 24, 0.06), 0 2px 8px -2px rgba(43, 15, 24, 0.06);
+  --shadow-2: 0 1px 2px rgba(43, 15, 24, 0.06), 0 18px 40px -18px rgba(99, 33, 53, 0.28);
+  --shadow-3: 0 2px 6px rgba(43, 15, 24, 0.08), 0 40px 80px -32px rgba(99, 33, 53, 0.38);
+  --glow-gold: 0 0 0 1px rgba(242, 206, 126, 0.35), 0 0 32px rgba(242, 206, 126, 0.25);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --t-micro: 160ms;
+  --t-ui: 320ms;
+  --t-reveal: 800ms;
+
+  --nav-h: 72px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --t-micro: 1ms;
+    --t-ui: 1ms;
+    --t-reveal: 1ms;
+  }
+}
